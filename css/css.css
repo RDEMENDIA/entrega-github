@@ -381,18 +381,22 @@ header {
 	color: white;
 	background-color: #607196;
 }
-.container-nosotros {
+.main-nosotros {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	border: 3px solid black;
+	justify-content: space-around;
+
 }
 .container-izq-nosotros {
 	display: flex;
 	flex-direction: column;
+	border: 3px solid black;
 }
 .container-der-nosotros {
 	display: flex;
 	flex-direction: column;	
+	border: 3px solid black;
 }
 .h1-nosotros {
 	text-align: center;
