@@ -279,8 +279,8 @@ header {
 .container-contacto-grid > div {
     background-color: ;
     text-align: center;
-    padding:;
-    font-size: 30px;
+    padding: auto;
+    /* font-size: 30px; */
 }
 .main-contacto {
     grid-area: main-contacto;
