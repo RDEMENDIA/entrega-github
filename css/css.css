@@ -1,3 +1,4 @@
+
 /* selectores generales */
 * {
 	margin: 0;
@@ -44,8 +45,6 @@ h1 {
 
 
 /* selectores header */
-
-}
 header {
 	background-color:#DDDEE4;
 	padding-top: 5px;
@@ -68,7 +67,6 @@ header {
 	text-align: center;
 	justify-content: center;
 	display: flex;
-	text-shadow: ;	
 	font-size: 16px;
     font-weight: 500;
 	width: 150px;
@@ -78,7 +76,6 @@ header {
 	text-align: center;
 	justify-content: center;
 	display: flex;
-	text-shadow: ;	
 	font-size: 16px;
     font-weight:500;
 	/* width: 150px; */
@@ -165,6 +162,15 @@ header {
 	margin-right: auto;
 	border-radius: 30px;
 	background: color #A4ADC2;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;	
+}
+.button-index:hover {
+	background-color: #FF7B9C;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
 }
 .container-pen {
 	height: 17vh;
@@ -172,35 +178,9 @@ header {
 	justify-content:center;
 	align-items: center;
 }
-.button-index:hover {
-	background-color: #FF7B9C;
-}
-.button {
-	font-size: 1.1em;
-	font-weight: bold;
-	letter-spacing: 0.07em;
-	padding: 1.2em;
-	background: #FF7B9C;
-	border: 0;
-	outline: 0;
-	border-radius: 35em;
-	color: white;
-	transition: all 0.65s;
-}
-.button:focus {
-	  outline: 0; 
-}
-.button:hover {
-	  margin-top: .7em;
-}
-.blue {
-	background: #2E68FF; 
-	background: linear-gradient(110deg, #2E68FF 10%, #26B4FB); 
-}
-.button:hover {
-	  background: linear-gradient(110deg, #4075FF 10%, #40BFFF);
-	  box-shadow: 0em .1em .7em rgba(64, 118, 255, 0.25), 0em .1em .7em rgba(64, 175, 255, 0.5490196078431373);
-}
+
+
+
 
 
 
@@ -235,8 +215,7 @@ header {
 	padding: 20px 16px;
 	text-align: center;
 	justify-content: center;
-	display: flex;
-	text-shadow: ;	
+	display: flex;	
 	font-size: 18px;
 	width: 150px;
 }
@@ -245,7 +224,6 @@ header {
 	text-align: center;
 	justify-content: center;
 	display: flex;
-	text-shadow: ;	
 	font-size: 18px;
 	width: 150px;
 } 
@@ -327,7 +305,6 @@ header {
 /* selectores precios*/
 .body-precios {
 	font-family: 'Mohave', sans-serif;
-	background-color: ;
 	color: white;
 	text-align: center;
 	background-color: #607196;
@@ -384,19 +361,17 @@ header {
 .main-nosotros {
 	display: flex;
 	flex-direction: row;
-	border: 3px solid black;
 	justify-content: space-around;
 
 }
 .container-izq-nosotros {
 	display: flex;
 	flex-direction: column;
-	border: 3px solid black;
+
 }
 .container-der-nosotros {
 	display: flex;
 	flex-direction: column;	
-	border: 3px solid black;
 }
 .h1-nosotros {
 	text-align: center;
@@ -438,40 +413,12 @@ header {
 	border-radius: 1.5rem;
 }
 
-/* footer {
-	display: flex;
-	background-color: #A4ADC2;
-	text-align: center;
-	color: #5d5e61;
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 2rem;
-	padding-right: 1rem;
-	padding-top: 0.5rem; */
-}
-/* .nav-footer {
-	text-decoration: none;
-	list-style: none;
-} */
-
-/* .grid-container-footer {
-	display: grid;
-	grid-template-columns: auto auto auto;
-} */
-
-
-.container-footer {
-}
-
 .footer {
-    display: grid;
+    display: flex;
     grid-area: footer;
     background-color: #DDDEE4;
-    grid-gap: 0px;
-    grid-template-areas:
-    'mapa-lugar mapa-lugar disclaimer disclaimer copyright copyright'
-    'mapa-lugar mapa-lugar disclaimer disclaimer copyright copyright'
-    'mapa-lugar mapa-lugar disclaimer disclaimer copyright copyright';
+    grid-gap: 40px;
+	justify-content: space-evenly;
 }
 .footer > div {
     background-color:  #DDDEE4;
@@ -479,23 +426,25 @@ header {
     /* padding: 0px; */
 }
 .mapa-lugar {
-    grid-area: mapa-lugar;
+    display: flex;
+	flex-direction: column;
     font-size: 18px;
     padding-left: 80px;
     width: 400px;
     color: #607196;
+	justify-content: center;
+	align-items: center;
 }
 .disclaimer {
-    grid-area: disclaimer;
-    font-size: 16px;
-    display:
+    display: flex;
+	flex-direction: column;
+	font-size: 16px;
     text-align: center;
 	align-content: center;
     padding-top: 17vh;
     padding-left: 45px;    
 }
 .logo-copyright {
-    grid-area: copyright;
     font-size: 18px;
     color: #607196;
     font-weight: 300;
@@ -511,8 +460,8 @@ header {
     list-style-type: none;
     display: inline;
     padding: 10px;
-
 }
+
 
 
 
@@ -552,12 +501,35 @@ header {
     'main main main main main main'
     'footer footer footer footer footer footer';
 }
-.container-grid > div {
-    background-color: ;
-    /* text-align: center; */
-    padding:;
-    /* font-size: 30px; */
+
+
+
+
+
+
+
+
+/* transiciones */
+.boton-animado {
+	background-color: #2E68FF;
+	height: 35px;
+	width: 75px;
+	border-radius: 5px;
+	transition-property: width, height;
+  	transition-duration: 0.5s;	
 }
+
+
+
+.boton-animado:hover {
+	height: 40px;
+	width: 80px;
+	transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+	background-color: #FF7B9C;
+}
+
+
+
 
 
 
@@ -565,11 +537,7 @@ header {
 
 
 /* media queries index */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .header 
-    
-}
+
 @media only screen and (max-width: 768px) {
     .header-nav
     {flex-direction: column;
@@ -595,13 +563,14 @@ header {
     .container-index
     {margin-left: auto;
         margin-right: auto;
-
+	}
     }
 @media only screen and (max-width: 768px) {
     .texto-principal
     {margin-left: auto;
      margin-right: auto;
     } 
+}
 @media only screen and (max-width: 768px) {
     .imagen-index
     {
@@ -635,44 +604,40 @@ header {
     {
     height: 30rem;
     padding-left: 0px;
-    
+	}
 }  
 @media only screen and (max-width: 768px) {
-    .container-inicio-2 
-    {
+    .container-inicio-2 {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    
     }
   }
 @media only screen and (max-width: 768px) {
-    .footer
-    {display: flex;
+    .footer {
+    display: flex;
     flex-direction: column;
     margin-left:auto;
     margin-right: auto;
+	}
 }    
 @media only screen and (max-width: 768px) {
     .disclaimer {
         padding: 10px;
         margin: 0;
+	}
     }
 @media only screen and (max-width: 768px) {
     .mapa-lugar {
         margin: auto;
         padding-left: 0;
         padding-top: 15px;
+	}
     }
 @media only screen and (max-width: 768px) {
     .logo-copyright {
         padding-top: 0;
+	}
     }
 
-
-/* dispositivos grandes */
-@media only screen and (max-width: 992px)
-     
-
-  
-  
+/* fin */

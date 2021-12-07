@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +20,10 @@
                 <nav class="header-nav">
                     
                     <ul class="ul">
-                        <li><a href="index.html"><img class="logo" src="media/logo.svg"alt=""></a></li>   
+                        <li><a href="index.html"><img class="logo animate__animated animate__backInRight" src="media/logo.svg"alt=""></a></li>   
                     </ul>
 
-                    <ul class="ul">
+                    <ul class="ul animate__animated animate__rubberBand">
                         <li class="nav-li-1"><a href="Contacto.html">
                         Contacto</a></li>
                         <li class="nav-li"><a href="Precios.html">
@@ -30,21 +33,21 @@
                         <li class="nav-li"><a href="Nosotros.html">
                         Nosotros</a></li>
                     </ul>
-                       
+
                 </nav>
         </header>
         
         <main class="main">
 
             <div class="container-inicio-1">
-                <img class="imagen-principal" src="media/Waist bag-rafiki.svg" alt=""></img>
+                <img class="imagen-principal animate__animated animate__backInUp" src="media/Waist bag-rafiki.svg" alt=""></img>
                 <div class="texto-principal">
-                    <h1>Elige el plan que mas te guste</h1>
+                    <h1 class="animate__animated animate__backInDown">Elige el plan que mas te guste</h1>
                     <p class="parrafo-index">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur optio autem quo, labore officiis fugiat! Quidem illo, autem aperiam dignissimos aliquam perferendis vel eaque veniam placeat porro reiciendis nam!
                     </p>
                     <br>
-                    <div class="container-pen">
-                        <button class="blue button">Entra ya!</button>  
+                    <div class="container-boton-animado">
+                        <button class="boton-animado">Entra ya!</button>  
                     </div>
                 </div>
         
@@ -77,7 +80,7 @@
             
 
 
-        </div>
+        </main>
         
         <footer class="footer">
             
@@ -103,5 +106,9 @@
             
         </footer>
 
+        <script src="assets/js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>    
 </body>
 </html>
