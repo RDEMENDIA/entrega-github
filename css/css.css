@@ -269,7 +269,7 @@ header {
     background-color: #607196;
     font-family: 'Roboto', sans-serif;
     grid-gap: 10px;
-    justify-content: space-evenly;
+    justify-content: ;
     align-items: center;
     grid-template-areas:
     'header-contacto header-contacto header-contacto header-contacto header-contacto header-contacto'
